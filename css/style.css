@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,7 @@ input[type=number] {
   margin-bottom: 50px;
   letter-spacing: 1px;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 .body .box {
   display: flex;
@@ -43,6 +45,7 @@ input[type=number] {
 }
 .body .box label {
   color: lightgrey;
+  text-shadow: 0 0 2px darkgray;
   font-size: 36px;
 }
 .body .box input {
@@ -74,7 +77,18 @@ input[type=number] {
 }
 .body .box .resultado {
   font-size: 40px;
-  margin-top: 15px;
+  margin-top: 25px;
   color: #e7e7e7;
   text-shadow: 0 0 5px darkgray;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .body .title {
+    font-size: 52px;
+  }
+  .body .box .resultado {
+    font-size: 34px;
+  }
 }/*# sourceMappingURL=style.css.map */

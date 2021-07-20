@@ -10,8 +10,7 @@ function calculo() {
   if (quantidade.value <= 0 || preço.value <= 0) {
     alert('Valor inserido inválido, confira e tente novamente !')
   } else {
-    resultado.innerHTML = res
-    preço.innerHTML = ' '
+    resultado.innerHTML = res + ' por Kg/Litro'
   }
 }
 
