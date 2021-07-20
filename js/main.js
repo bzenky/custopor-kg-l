@@ -7,10 +7,12 @@ function calculo() {
   let res = parseInt(((preço.value * 1000)/quantidade.value))
     .toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   
-  resultado.innerHTML = res
-
-  preço.innerHTML = ' '
-
+  if (quantidade.value <= 0 || preço.value <= 0) {
+    alert('Valor inserido inválido, confira e tente novamente !')
+  } else {
+    resultado.innerHTML = res
+    preço.innerHTML = ' '
+  }
 }
 
 calcular.onclick = calculo
