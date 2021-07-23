@@ -4,7 +4,7 @@ const calcular = document.querySelector('.calcular')
 const resultado = document.querySelector('.resultado')
 
 function calculo() {
-  let res = parseInt(((preço.value * 1000)/quantidade.value))
+  let res = parseFloat(((preço.value * 1000)/quantidade.value))
     .toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   
   if (quantidade.value <= 0 || preço.value <= 0) {
